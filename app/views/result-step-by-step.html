@@ -16,23 +16,61 @@
   </script>
 {% endblock %}
 
-<style>
-  .bot{
-    background-color: aqua;
-    height: 100px;
-    width: 100px;
-  }
-
-  .dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-</style>
 
 {% block content %}
+
+<script src="https://kit.fontawesome.com/48f7dee934.js" crossorigin="anonymous"></script>
+
+<style>
+
+
+  
+input[type=text] {
+  width: 100%;
+  height: 56px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+
+}
+
+input[type=text]:focus {
+  width: 100%;
+  height: 56px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+::placeholder {
+  color: #505A5F;
+  font-size: 16px;
+}
+
+.fa-solid {
+ 
+  padding-top: 8px;
+}
+
+.column-left {
+  float: left;
+  width: 85%;
+
+
+}
+
+.column-right {
+  float: right;
+  width: 15%;
+
+
+}
+
+.examples{
+  margin-top: 20px;
+  color: aqua;
+}
+  </style>
 
 <div class="govuk-grid-row">
   <div></div>
@@ -301,8 +339,21 @@
         </li>
       </ol>
     </div>
+    <form>
+      <div class="column-left">
+         <input type="text" placeholder="What do you need to do today?"> 
+       </div>   
 
+       <div class="column-right">
+         <a href="" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="height:54px">
+         <i class="fa-solid fa-paper-plane fa-s"></i> </a>
+       </div>
+     </form>
   </div>
+
+     
+
+  
 </div>
 
 {% endblock %}
