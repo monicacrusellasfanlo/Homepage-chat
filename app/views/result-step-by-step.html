@@ -67,8 +67,9 @@ input[type=text]:focus {
 }
 
 .examples{
-  margin-top: 20px;
-  color: aqua;
+  padding-top: 70px;
+  font-size: 14px;
+  color: grey;
 }
   </style>
 
@@ -339,15 +340,18 @@ input[type=text]:focus {
         </li>
       </ol>
     </div>
-    <form>
+    <form style="max-width: 650px;">
       <div class="column-left">
-         <input type="text" placeholder="What do you need to do today?"> 
+       <input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="What do you need to do today?" style="height: 56px;">
        </div>   
 
        <div class="column-right">
-         <a href="" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="height:54px">
+         <a href="/result-step-by-step" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="height:54px">
          <i class="fa-solid fa-paper-plane fa-s"></i> </a>
        </div>
+       <p class="examples">
+         Examples: "I want to check my pension state", "I need to sign in to my HMRC account", "When is the next bank holiday?"
+        </p>
      </form>
   </div>
 
