@@ -15,14 +15,15 @@
     text-align: center;
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: -50px;
     
   }
 
-  .center {
-  margin-left: -50px;
 
-  }
+.container
+{
 
+}
   .govuk-grid-row {
     margin: 8px;
   }
@@ -66,28 +67,31 @@ input[type=text]:focus {
   width: 15%;
 
 
+
 }
 
 .examples{
-  margin-top: 20px;
-  color: aqua;
+  padding-top: 70px;
+  font-size: 14px;
+  color: grey;
 }
   </style>
 
 
   
-    <div class="center">
-     <p class="header">
-      GOV.UK
-      </p>
-    </div>
+ 
 
     <div class="govuk-grid-row">
-      <p>
+      <div>
+        <p class="header">
+         GOV.UK
+         </p>
+       </div>
+      <p style="max-width: 650px;">
         👋 Welcome to GOV.UK, the best place to find government services and information. Ask any question to get up to speed with what you need to do.
       </p>
       
-      <form>
+      <form style="max-width: 650px;">
        <div class="column-left">
           <input type="text" placeholder="What do you need to do today?"> 
         </div>   
@@ -96,18 +100,15 @@ input[type=text]:focus {
           <a href="/result-step-by-step" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="height:54px">
           <i class="fa-solid fa-paper-plane fa-s"></i> </a>
         </div>
+        <p class="examples">
+          Examples: "I want to check my pension state", "I need to sign in to my HMRC account", "When is the next bank holiday?"
+         </p>
       </form>
 <div>
-      <div class="examples">
-       <p class="govuk-body-s">
-        Examples: "I want to check my pension state", "I need to sign in to my HMRC account", "Something else"
-       </p>
+      <div>
+   
       </div>
-
+ 
     </div>
-
-
-
-
 
 {% endblock %}
