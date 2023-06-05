@@ -10,13 +10,17 @@ html, body {
     overflow-x: hidden;
 }
 
-.header { 
-display: inline-block;
-margin: 5% 0 5% 0;
-text-align: center;
-
-
+.govuk-heading-xl {
+	font-size: 80px;
+	margin: 0 auto;
+	display: block;
+	margin: 5% auto;
+	text-align: center;
 }
+@media screen and (min-width: 380px) { .govuk-heading-xl { font-size: 95px; } }
+@media screen and (min-width: 440px) { .govuk-heading-xl { font-size: 110px; } }
+@media screen and (min-width: 601px) { .govuk-heading-xl { font-size: 160px; } }
+
 
 
 
@@ -37,24 +41,21 @@ text-align: center;
   top:50%;
   transform:translate(-50%, -50%);
 }
-  
-input {
-  width: 100%;
+
+.govuk-input, .govuk-button {
   height: 56px;
   padding: 10px;
   box-sizing: border-box;
+}  
+.govuk-input {
   border: 2px solid black;
-
 }
-
-input:focus {
+.govuk-input:focus {
   border: 2px solid #1D70B8;
   outline: none;
 }
-
 ::placeholder {
   color: #505A5F;
-  font-size: 16px;
 }
 
 .fa-solid {
@@ -69,6 +70,9 @@ input:focus {
 .column-right {
   float: right;
   width: 15%;
+}
+.column-right .govuk-button {
+	line-height: 34px;
 }
 
 .examples{
@@ -85,8 +89,36 @@ input:focus {
 
 }
 
+
+.examples{
+  padding-top: 70px;
+  font-size: 14px;
+  color: grey;
+}
+
 @media screen and (min-width: 601px) {
 	h1 {
 	    font-size: 50px;
 	}
+}
+
+
+
+.chat-text-box {
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	z-index: 10000;
+	margin-left: -30px;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+	box-shadow: 0 0 5px grey;
+}
+
+.chat-conversation__author {
+	font-weight: bold;
+}
+.chat-conversation__message-box {
+	border-top: 1px solid grey;
 }
