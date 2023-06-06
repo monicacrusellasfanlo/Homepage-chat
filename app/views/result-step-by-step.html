@@ -30,9 +30,7 @@
   
   <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-l">
-    Your conversation with GOV.UK
-  </h1>
+  <h1 class="govuk-heading-l">Your conversation with GOV.UK </h1>
 
   </div>
 </div>
@@ -40,22 +38,22 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
   
-    <form class="chat-text-box">
+
+
+     <form class="chat-text-box" action="">
+      <div class="input-content">
       <p><strong>What do you need to do today?</strong></p>
       <div class="column-left">
+        <input class="govuk-input" id="chat-input" name="chat-input" type="text">
+      </div>   
+      <div class="column-right">
+        <button type="submit"  class="govuk-button govuk-button--start">Send</button>
+      </div>
+      <p class="examples">
+        Examples: "I want to check my pension state", "I need to sign in to my HMRC account", "When is the next bank holiday?"
+      </p></div>
+    </form>
 
-       <input class="govuk-input" id="event-name" name="event-name" type="text"style="height: 56px;">
-       </div>   
-       <div class="column-right">
-         <a href="/result-step-by-step" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="height:54px">
-         <!-- <i class="fa-solid fa-paper-plane fa-s"></i>  -->
-          Send
-         </a>
-       </div>
-       <p class="examples">
-         Examples: "I want to check my pension state", "I need to sign in to my HMRC account", "When is the next bank holiday?"
-        </p>
-     </form>
 
     <div class="chat-conversation">
       <div class="chat-conversation__message-box chat-conversation__message-box--sent">

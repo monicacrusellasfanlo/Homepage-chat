@@ -71,7 +71,6 @@ margin-bottom: 24px;
 	background-color: white;
 	z-index: 10000;
   padding:30px;
-
   box-shadow:0 0px 16px rgba(#000, 0.19);
   overflow: hidden;
   left: 0;
@@ -83,4 +82,14 @@ margin-bottom: 24px;
 }
 .chat-conversation__message-box {
 	border-top: 1px solid grey;
+  padding-top: 16px;
 }
+
+
+.input-content{
+  max-width: 640px;
+  margin: auto;
+}
+
+
+
