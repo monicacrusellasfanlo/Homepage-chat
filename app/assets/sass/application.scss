@@ -12,7 +12,7 @@ html, body {
 
 
 .container {
-height: 60vh;
+height: 72vh;
 
 
 
@@ -29,7 +29,7 @@ max-width: 700px;
 	margin: 5% auto 16px auto;
 	text-align: left;
 }
-@media screen and (min-width: 380px) { .govuk-heading-xl { font-size: 40px; line-height: 0.9; } }
+@media screen and (min-width: 375px) { .govuk-heading-xl { font-size: 65px; line-height: 0.9; } }
 @media screen and (min-width: 440px) { .govuk-heading-xl { font-size: 80px; } }
 @media screen and (min-width: 601px) { .govuk-heading-xl { font-size: 120px; } }
 
