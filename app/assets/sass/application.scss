@@ -10,22 +10,30 @@ html, body {
     overflow-x: hidden;
 }
 
+
+.container {
+height: 60vh;
+
+
+
+}
 .subtitle{
 margin-top: -40px;
 }
+
 
 .govuk-heading-xl {
 	font-size: 60px;
 	margin: 0 auto;
 	display: block;
-	margin: 5% auto;
+	margin: 15% auto 16px auto;
 	text-align: left;
 }
-@media screen and (min-width: 380px) { .govuk-heading-xl { font-size: 40px; } }
+@media screen and (min-width: 380px) { .govuk-heading-xl { font-size: 40px; line-height: 0.9; } }
 @media screen and (min-width: 440px) { .govuk-heading-xl { font-size: 70px; } }
 @media screen and (min-width: 601px) { .govuk-heading-xl { font-size: 100px; } }
 
-@media screen and (min-width: 380px) { .subtitle { margin-top: -20px; } }
+@media screen and (min-width: 380px) { .subtitle { margin-top: 0px; } }
 
 
 
@@ -40,9 +48,11 @@ margin-bottom: 24px;
   height: 56px;
   padding: 10px;
   box-sizing: border-box;
+ 
 }  
 .govuk-input {
   border: 2px solid black;
+
 }
 .govuk-input:focus {
   border: 2px solid #1D70B8;
