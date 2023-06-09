@@ -1,0 +1,61 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<script src="https://kit.fontawesome.com/48f7dee934.js" crossorigin="anonymous"></script>
+
+<div class="container page--business-chat">
+
+  <div class="govuk-phase-banner govuk-phase-banner--chat">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Experimental
+      </strong>
+      <span class="govuk-phase-banner__text ">
+        This is a new feature. <a href="/business-chat" class="govuk-link">Send us some feedback</a>.
+      </span>
+    </p>
+  </div>
+
+  <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                      <h1 class="govuk-heading-l">
+                        [Business chat]
+                      </h1>
+                      <div class="subtitle">
+                        <p class="govuk-body">[Description of how it works]</p>
+                      </div>
+
+
+                      <div class="chat-conversation">
+                        <div class="chat-conversation__message-box chat-conversation__message-box--sent">
+                          <p class="chat-conversation__author">You</p>
+                          <p class="chat-conversation__message">[Message] </p>
+                        </div>
+                        <div class="chat-conversation__message-box chat-conversation__message-box--received">
+                          <p class="chat-conversation__author">GOV.UK</p>
+                          <p class="chat-conversation__message">[Message] </p>
+                        </div>
+
+
+                      <form class="govuk-form">
+                        <label class="govuk-label" for="event-name" style="font-weight: 800;">
+                        What do you need to do today?
+                        </label>
+                        <div class="column-left">
+                          <input class="govuk-input" id="chat-input" name="chat-input" type="text">
+                        </div>   
+                        <div class="column-right">
+                        <button type="submit"  class="govuk-button govuk-button--start"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+{% endblock %}
