@@ -4,17 +4,12 @@
 // 
 
 // Add extra styles here
-
-html, body {
-    
-}
-
-
-.container {
+@import 'service-header';
+@import "node_modules/govuk-frontend/govuk/base";
+@import "node_modules/govuk-frontend/govuk/objects/width-container";
+@import "node_modules/govuk-frontend/govuk/objects/grid";
 
 
-
-}
 .subtitle{
 max-width: 700px;
 }
@@ -29,7 +24,7 @@ max-width: 700px;
 }
 @media screen and (min-width: 375px) { .govuk-heading-xl { font-size: 65px; line-height: 0.9; } }
 @media screen and (min-width: 440px) { .govuk-heading-xl { font-size: 80px; } }
-@media screen and (min-width: 601px) { .govuk-heading-xl { font-size: 120px; } }
+@media screen and (min-width: 601px) { .govuk-heading-xl { font-size: 90px; } }
 
 @media screen and (min-width: 380px) { .subtitle { margin-top: 0px; } }
 
@@ -125,10 +120,35 @@ form {
 }
 
 
+.container--homepage {
+  .govuk-phase-banner {
+    margin-bottom: 40px;
+    margin-top: -20px;
+    @include govuk-media-query ($until: tablet) {
+      display: none;
+    } 
+    @include govuk-media-query ($from: tablet) {
+      .govuk-phase-banner {
+      }
+      .govuk-phase-banner__content {
+        font-size: 1.5rem;
+      }
+      .govuk-phase-banner__content__tag {
+        font-size: 1.5rem;
+      }
+      .govuk-phase-banner__text {
+        display: block;
+        margin-top: 10px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+}
 .page--business-chat {
   .govuk-phase-banner {
     margin-bottom: 40px;
-    margin-top: -40px
+    margin-top: -20px
   }
   .chat-conversation {
   box-shadow: 0 0 4px 1px #f3f2f1;
@@ -138,3 +158,4 @@ form {
   border-top: none;
   }
 }
+

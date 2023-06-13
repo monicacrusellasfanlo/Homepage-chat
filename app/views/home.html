@@ -1,5 +1,6 @@
 {% extends "layouts/main.html" %}
 
+
 {% block pageTitle %}
   Question page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
@@ -9,7 +10,18 @@
 <script src="https://kit.fontawesome.com/48f7dee934.js" crossorigin="anonymous"></script>
 
 
-<div class="container">
+<div class="container container--homepage">
+
+  <div class="govuk-phase-banner govuk-phase-banner--chat">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Mobile prototype
+      </strong>
+      <span class="govuk-phase-banner__text ">
+        This is a prototype that only works on mobile. It won’t work properly on a tablet or a laptop.
+      </span>
+    </p>
+  </div>
 
   <h1 class="govuk-heading-xl">
     Welcome <br>to GOV.UK

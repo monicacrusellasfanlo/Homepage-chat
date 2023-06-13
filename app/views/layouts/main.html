@@ -4,3 +4,14 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+
+{% block header %}
+	{% include "layouts/service-header.njk" %}
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/service-header.js"></script>
+  <script> new window.CrossServiceHeader(document.querySelector("[data-module='one-login-header']")).init()</script>
+{% endblock %}
+
