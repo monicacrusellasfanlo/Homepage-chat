@@ -68,7 +68,7 @@ $govuk-header-link-underline-thickness: 3px;
 .cross-service-header__button {
   display: none;
   border-right: 0.15rem solid;
-  pointer-events: none;
+
   cursor: pointer;
   .cross-service-header.js-enabled & {
     display: inline;
@@ -293,6 +293,9 @@ $govuk-header-link-underline-thickness: 3px;
   // @include govuk-media-query ($from: tablet) {
   //   max-width: 66%;
   // } 
+  @include govuk-media-query ($from: tablet) {
+      display: none !important;
+  }
 }
 
 .one-login-header__nav__list {
