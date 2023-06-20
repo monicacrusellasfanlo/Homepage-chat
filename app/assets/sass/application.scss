@@ -168,6 +168,7 @@ form {
   }
   .chat-conversation__form {
     background: govuk-colour("light-grey");
+    min-height: 70px;
     &:not(:only-child) {
       border-top: 1px solid $govuk-border-colour;  
     }
