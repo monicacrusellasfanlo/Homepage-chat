@@ -90,37 +90,30 @@ margin-bottom: 24px;
 }
 
 .chat-text-box {
-
 	bottom: 0;
 	background-color: white;
 	z-index: 10000;
   padding:30px;
-  box-shadow:0 0px 16px rgba(#000, 0.19);
+  box-shadow:0 0px govuk-spacing(3) govuk-colour("dark-grey");
   overflow: hidden;
   left: 0;
   right: 0;
 }
-
 .chat-conversation__author {
 	font-weight: bold;
 }
 .chat-conversation__message-box {
-	border-top: 1px solid grey;
-  padding-top: 16px;
+	border-top: 1px solid $govuk-border-colour;
+  padding-top: govuk-spacing(3);
 }
-
 .input-content{
   max-width: 640px;
   margin: auto;
 }
-
-
 form {
   display: block;
   min-height: 100px;
 }
-
-
 .container--homepage {
   .govuk-phase-banner {
     margin-bottom: 40px;
@@ -144,19 +137,54 @@ form {
       }
     }
   }
-
 }
+
 .page--business-chat {
   .govuk-phase-banner {
     margin-bottom: 40px;
-    margin-top: -20px
+    margin-top: -20px;
+    @include govuk-media-query ($from: tablet) {
+      margin-top: -40px;
+    }
+  }
+  .govuk-button--start {
+    font-size: 1.75rem;
   }
   .chat-conversation {
-  box-shadow: 0 0 4px 1px #f3f2f1;
-  padding: 0 20px;
+    border: 1px solid $govuk-border-colour;
+    border-top: 5px solid $govuk-brand-colour; 
+    margin-bottom: 20px;
+  }
+  .chat-conversation__messages {
+    padding: 0 govuk-spacing(3);
+    max-height: 50vh;
+    overflow-y: scroll;
+  }
+  .chat-conversation__feedback {
+    color: govuk-colour("dark-grey");
   }
   .chat-conversation__message-box:first-child {
-  border-top: none;
+    border-top: none;
+  }
+  .chat-conversation__form {
+    background: govuk-colour("light-grey");
+    &:not(:only-child) {
+      border-top: 1px solid $govuk-border-colour;  
+    }
+    padding: govuk-spacing(4) govuk-spacing(3) govuk-spacing(1);
+  }
+  .chat-conversation__message-box--blank {
+    margin: govuk-spacing(4) auto;
+    p, ol, li {
+      color: $govuk-secondary-text-colour;  
+    }
+  }
+  .chat-conversation__icon {
+    vertical-align: middle;
+    margin-right: govuk-spacing(1);
+    &.chat-conversation__icon--govuk {
+      margin-top: -4px;
+    }
   }
 }
 
