@@ -10,111 +10,10 @@
 @import 'service-header';
 
 
-
-.subtitle{
-max-width: 700px;
-}
-
-
-.govuk-heading-xl {
-	font-size: 60px;
-	margin: 0 auto;
-	display: block;
-	margin: 5% auto 16px auto;
-	text-align: left;
-}
-@media screen and (min-width: 375px) { .govuk-heading-xl { font-size: 65px; line-height: 0.9; } }
-@media screen and (min-width: 440px) { .govuk-heading-xl { font-size: 80px; line-height: 1.1;} }
-
-
-@media screen and (min-width: 380px) { .subtitle { margin-top: 0px; } }
-
-
-
-.govuk-list--number > li {
-margin-bottom: 24px;
-}
-
-.govuk-body{
-  text-align: left;
-}
-.govuk-input, .govuk-button {
-  height: 56px;
-  padding: 10px;
-  box-sizing: border-box;
- 
-}  
-.govuk-input {
-  border: 2px solid black;
-
-}
-.govuk-input:focus {
-  border: 2px solid #1D70B8;
-  outline: none;
-}
-::placeholder {
-  color: #505A5F;
-}
-
-.fa-solid {
-  margin: auto;
-}
-
-
-
-.column-left {
-  float: left;
-  width: 85%;
-}
-
-.column-right {
-  float: right;
-  width: 15%;
-}
-
-@media screen and (min-width: 800px) { .column-left { width:60% } }
-@media screen and (min-width: 800px) { .column-right { width:40% } }
-
-
-.column-right .govuk-button {
-	line-height: 34px;
-  background-color: 	#1d70b8;
-  height: 54px;
-
-}
-
-.examples{
-  padding-top: 70px;
-  font-size: 14px;
-  color: grey;
-}
-
-.chat-text-box {
-	bottom: 0;
-	background-color: white;
-	z-index: 10000;
-  padding:30px;
-  box-shadow:0 0px govuk-spacing(3) govuk-colour("dark-grey");
-  overflow: hidden;
-  left: 0;
-  right: 0;
-}
-.chat-conversation__author {
-	font-weight: bold;
-}
-.chat-conversation__message-box {
-	border-top: 1px solid $govuk-border-colour;
-  padding-top: govuk-spacing(3);
-}
-.input-content{
-  max-width: 640px;
-  margin: auto;
-}
-form {
-  display: block;
-  min-height: 100px;
-}
 .container--homepage {
+  .subtitle{
+    max-width: 700px;
+  }
   .govuk-phase-banner {
     margin-bottom: 40px;
     margin-top: -20px;
@@ -137,55 +36,50 @@ form {
       }
     }
   }
+  .govuk-heading-xl {
+    font-size: 60px;
+    margin: 0 auto;
+    display: block;
+    margin: 5% auto 16px auto;
+    text-align: left;
+  }
+  @media screen and (min-width: 375px) { .govuk-heading-xl { font-size: 65px; line-height: 0.9; } }
+  @media screen and (min-width: 440px) { .govuk-heading-xl { font-size: 80px; line-height: 1.1;} }
+  @media screen and (min-width: 380px) { .subtitle { margin-top: 0px; } }
 }
 
-.page--business-chat {
-  .govuk-phase-banner {
-    margin-bottom: 40px;
-    margin-top: -20px;
-    @include govuk-media-query ($from: tablet) {
-      margin-top: -40px;
-    }
-  }
-  .govuk-button--start {
-    font-size: 1.75rem;
-  }
-  .chat-conversation {
-    border: 1px solid $govuk-border-colour;
-    border-top: 5px solid $govuk-brand-colour; 
-    margin-bottom: 20px;
-  }
-  .chat-conversation__messages {
-    padding: 0 govuk-spacing(3);
-    max-height: 50vh;
-    overflow-y: scroll;
-  }
-  .chat-conversation__feedback {
-    color: govuk-colour("dark-grey");
-  }
-  .chat-conversation__message-box:first-child {
-    border-top: none;
-  }
-  .chat-conversation__form {
-    background: govuk-colour("light-grey");
-    min-height: 70px;
-    &:not(:only-child) {
-      border-top: 1px solid $govuk-border-colour;  
-    }
-    padding: govuk-spacing(4) govuk-spacing(3) govuk-spacing(1);
-  }
-  .chat-conversation__message-box--blank {
-    margin: govuk-spacing(4) auto;
-    p, ol, li {
-      color: $govuk-secondary-text-colour;  
-    }
-  }
-  .chat-conversation__icon {
-    vertical-align: middle;
-    margin-right: govuk-spacing(1);
-    &.chat-conversation__icon--govuk {
-      margin-top: -4px;
-    }
-  }
+/* styling the form */
+form {
+  display: block;
+  min-height: 100px;
 }
-
+.govuk-input, .govuk-button {
+  height: 56px;
+  padding: 10px;
+  box-sizing: border-box;
+}  
+.govuk-input {
+  border: 2px solid black;
+}
+.govuk-input:focus {
+  border: 2px solid #1D70B8;
+  outline: none;
+}
+.fa-solid {
+  margin: auto;
+}
+.column-left {
+  float: left;
+  width: 85%;
+}
+.column-right {
+  float: right;
+  width: 15%;
+}
+.column-right .govuk-button {
+  line-height: 34px;
+  background-color:   #1d70b8;
+  height: 54px;
+}
+@media screen and (min-width: 800px) { .column-left { width:60% } }
+@media screen and (min-width: 800px) { .column-right { width:40% } }
